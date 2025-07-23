@@ -1,0 +1,16 @@
+/* common styles */
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+/* navbar styles */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
