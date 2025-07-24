@@ -138,6 +138,81 @@
   z-index: 10;
   right: -80px;
 }
+/* deals styles*/
+.deal-description {
+  text-align: center;
+  margin-top: 130px;
+}
+.deal-description h2 {
+  font-size: 50px;
+}
+
+/* Search styles */
+.search-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.search-img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.search-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  /* max-width: 600px; */
+  padding: 20px;
+  background: none;
+}
+.search-title {
+  background: none;
+  font-size: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.search-form {
+  background: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.email-input {
+  flex-grow: 1;
+
+  /* max-width: 300px; */
+  padding: 12px 15px;
+  border: none;
+  font-size: 1em;
+  outline: none;
+}
+.subscribe-button {
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+/* footer styles */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-link {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /* RESPONSIVE STYLE */
 @media (max-width: 576px) {
   .list-1,
@@ -199,5 +274,10 @@
   }
   .store-description ul {
     padding: 20px;
+  }
+  .search-title {
+    font-size: 20px;
+  }
+  .search-form {
   }
 }
