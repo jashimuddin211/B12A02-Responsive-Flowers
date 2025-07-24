@@ -12,6 +12,13 @@
 .text-color {
   color: rgba(0, 0, 0, 0.5);
 }
+.btn {
+  background: #e95a08;
+  color: #ffffff;
+  width: 270px;
+  height: 50px;
+  border: none;
+}
 /* navbar styles */
 .nav-container {
   display: flex;
@@ -57,7 +64,37 @@
 .fresh {
   color: #e95a08;
 }
+/* flower card styles */
+.card-head {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 120px;
+}
+.head-our {
+  color: #e95a08;
+}
+.card-description {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  margin-top: 16px;
+  margin-bottom: 49px;
+}
+.card-name {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+.card-name . {
+  margin-top: 20px;
+}
 
+.card-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
 /* RESPONSIVE STYLE */
 @media (max-width: 576px) {
   .list-1,
