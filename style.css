@@ -9,8 +9,10 @@
   max-width: 1140px;
   margin: auto;
 }
+
 .text-color {
   color: rgba(0, 0, 0, 0.5);
+  font-size: 22px;
 }
 .btn {
   background: #e95a08;
@@ -98,6 +100,44 @@
 .card img {
   max-width: 100%;
 }
+/* challenging styles */
+.store-img-container {
+  position: relative;
+  display: inline-block;
+}
+.store-img {
+  max-width: 100%;
+  /* position: static; */
+  display: block;
+}
+.flower-store-container {
+  display: flex;
+
+  align-items: center;
+  gap: 60px;
+  margin-top: 210px;
+}
+
+.store-description {
+  align-items: center;
+}
+.store-description h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.flower-content {
+  margin-bottom: 30px;
+}
+.trusted-img {
+  background: none;
+  max-width: 200px;
+  position: absolute;
+  top: -80px;
+
+  z-index: 10;
+  right: -80px;
+}
 /* RESPONSIVE STYLE */
 @media (max-width: 576px) {
   .list-1,
@@ -129,15 +169,35 @@
     margin-top: 30px;
     margin-bottom: 16px;
   }
+  .banner-content {
+    padding: 20px;
+  }
 
   .btn {
     width: 100%;
+  }
+  .card-container {
+    margin-bottom: ;
   }
   .card-content {
     grid-template-columns: repeat(2, 1fr);
   }
   .card {
     width: fit-content;
+    padding: 20px;
+  }
+  .flower-store-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .store-img {
+    /* width: 100%; */
+    width: fit-content;
+  }
+  .trusted-img {
+    display: none;
+  }
+  .store-description ul {
     padding: 20px;
   }
 }
