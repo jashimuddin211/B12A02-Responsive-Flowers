@@ -215,7 +215,7 @@ body {
 
 .large {
   margin-top: 10px;
-  width: 620px;
+  max-width: 620px;
   height: 310px;
 }
 /* Search styles */
@@ -233,9 +233,6 @@ body {
 .overlay {
   text-align: center;
   background: none;
-  /* background-color: rgba(0, 0, 0, 0.4); dark overlay for contrast */
-  /* padding: 40px;
-  border-radius: 10px; */
 }
 
 .overlay h1 {
@@ -267,9 +264,6 @@ body {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
 }
-
-/* .subscribe-form button:hover {
-  background-color: darkorange; */
 
 /* footer styles */
 .footer-container {
@@ -303,6 +297,7 @@ body {
   .list-3 {
     display: none;
   }
+
   .nav-container,
   .cart-link {
     display: flex;
@@ -382,9 +377,11 @@ body {
   }
   .large {
     height: 100%;
-    margin-left: 65px;
+    /* margin-left: 65px;
     margin-right: 65px;
-    margin-bottom: 40px;
+    margin-bottom: 40px; */
+    width: 300px;
+    height: 150px;
   }
   .deal-description {
     padding: 20px;
@@ -397,8 +394,5 @@ body {
   }
   .card-name {
     font-size: 16px;
-  }
-  .bank {
-    font-size: 24px;
   }
 }
