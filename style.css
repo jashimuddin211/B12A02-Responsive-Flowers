@@ -1,3 +1,10 @@
+/* font family */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 /* common styles */
 * {
   background: rgb(245, 248, 255);
@@ -22,6 +29,10 @@
   border: none;
 }
 /* navbar styles */
+.header-1 {
+  margin-top: 20px;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -70,7 +81,7 @@
 .card-head {
   text-align: center;
   font-size: 50px;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 .head-our {
   color: #e95a08;
@@ -141,7 +152,8 @@
 /* deals styles*/
 .deal-description {
   text-align: center;
-  margin-top: 130px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 .deal-description h2 {
   font-size: 50px;
@@ -154,6 +166,7 @@
   justify-content: center;
   max-width: 1000px;
   margin: auto;
+  margin-bottom: 40px;
 }
 
 .card-de {
@@ -278,8 +291,10 @@
 }
 .footer-social {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
+  align-items: center;
   gap: 30px;
+  /* margin-bottom: 100px; */
 }
 /* RESPONSIVE STYLE */
 @media (max-width: 576px) {
@@ -319,8 +334,8 @@
   .btn {
     width: 100%;
   }
-  .card-container {
-    margin-bottom: ;
+  .card-description {
+    padding: 20px;
   }
   .card-content {
     grid-template-columns: repeat(2, 1fr);
@@ -359,11 +374,31 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   .small {
     max-width: 100%;
     height: fit-content;
+    margin-top: 35px;
   }
   .large {
-    padding: 65px;
+    height: 100%;
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-bottom: 40px;
+  }
+  .deal-description {
+    padding: 20px;
+  }
+  .responsive-text {
+    font-size: 14px;
+  }
+  .responsive-title {
+    font-size: 24px;
+  }
+  .card-name {
+    font-size: 16px;
+  }
+  .bank {
+    font-size: 24px;
   }
 }
